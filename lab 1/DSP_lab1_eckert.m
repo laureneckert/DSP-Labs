@@ -36,6 +36,11 @@ ylabel('Amplitude');
 
 %Problem 2:Determining the sampling frequency
 
+syms t
+a = simplify(fourier((heaviside(t + 1/2) - heaviside(t - 1/2))));
+disp('A');
+disp(a);
+
 %Problem 3:Fourier Transform
 
 %Problem 4:Sampling Theorem
