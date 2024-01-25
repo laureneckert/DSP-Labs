@@ -34,10 +34,6 @@ title('Discrete Signal for f = 80 Hz');
 xlabel('Sample Number n');
 ylabel('Amplitude');
 
-
-
-
-
 %Problem 2:Determining the sampling frequency
 
 %Problem 3:Fourier Transform
