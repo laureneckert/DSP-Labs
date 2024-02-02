@@ -2,7 +2,7 @@
 %Lauren Eckert
 
 %Problem 1:Aliasing
-
+%%
 % Define the sampling frequency
 fs = 100; % in Hz
 
@@ -40,8 +40,15 @@ syms t
 a = simplify(fourier((heaviside(t + 1/2) - heaviside(t - 1/2))));
 disp('A');
 disp(a);
-
+%%
 %Problem 3:Fourier Transform
+syms t f
+x_t = sinc(0.5*t);  % Define the signal x(t)
+X_f = fourier(x_t, f);  % Compute the Fourier Transform of x(t)
+
+% Display the result
+disp('The Fourier Transform of x(t) is: ');
+disp(X_f);
 
 %Problem 4:Sampling Theorem
 
